@@ -1,0 +1,155 @@
+body{
+background-color: #0a0c1b;
+width: 100px;
+font-family: 'Inter', sans-serif;
+}
+h1{
+font-size: 30px
+}
+
+container{
+display: grid;
+position: absolute;
+top: 20%;
+left: 15%;
+background-color: #1c1938;
+width: 1000px;
+height: 413px;
+display: flex;
+border-radius: 10px;
+}
+#ladoE{
+        color: white;
+        padding-top: 35px;
+        padding-right: 86px;
+        padding-left: 66px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+#ladoD{
+        height: 413px;
+        background: hsl(277, 79%, 38%);
+        width: 680px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
+img{
+        opacity: 0.45;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 413px;
+}
+#info{
+        width: 350px;
+
+}
+#infoUnder{
+        padding-top: 10px;
+        color: #a4a2b8;
+        font-size: small;
+}
+#insights{
+        color: #a85cd6;
+}
+
+#data{
+        padding-top: 65px;
+        display: flex;
+}
+.data{
+        margin-right: 33px;
+        
+}
+.dataSS{
+        color: #a4a2b8;
+        font-size: smaller;
+}
+h2{
+font-size: 20px;
+}
+footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #0a0c1b;
+        color: white;
+        text-align: center;
+}
+
+
+@media(max-width:475px){
+
+body{
+        background-color: #0a0c1b;
+}
+container{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr, 2fr;
+        grid-template-areas: 
+        "ladoD"
+        "ladoE";
+        top: 20%;
+        left: 15%;
+        background-color: #1c1938;
+        width: 413px;
+        height: 1000px;
+        border-radius: 10px;
+}
+#ladoE{
+        grid-area: ladoE;
+        padding-top: 50px;
+        padding-right: 86px;
+        padding-left: 66px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+}
+#ladoD{
+        border-radius: 10px 10px 0px 0px;
+        grid-area: ladoD;
+        width: 413px;
+        background: hsl(277, 79%, 38%);
+}
+
+img{
+        border-radius: 10px 10px 0px 0px;
+        width: 413px;
+        opacity: 0.45;
+}
+#info{
+width: 280px;
+text-align: center;
+
+
+}
+#infoUnder{
+text-align: center;
+padding-top: 10px;
+color: #a4a2b8;
+font-size: small;
+}
+
+#data{
+text-align: center;
+position: relative;
+top: -50px;
+left: 22px;
+padding-top: 80px;
+display: flex;
+flex-direction: column;
+}
+.data{
+margin-right: 33px;
+
+}
+.dataSS{
+
+color: #a4a2b8;
+font-size: smaller;
+}
+
+h2{
+font-size: 20px;
+}
