@@ -9,9 +9,7 @@ font-size: 30px
 
 container{
 display: grid;
-position: absolute;
-top: 20%;
-left: 15%;
+position: 150px auto;
 background-color: #1c1938;
 width: 1000px;
 height: 413px;
